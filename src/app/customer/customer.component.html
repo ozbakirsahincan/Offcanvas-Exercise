@@ -1,0 +1,19 @@
+<main class="container">
+    <div class="my-3 p-3 bg-body rounded shadow-sm">
+
+
+        <h1>Current city is {{city}}</h1>
+        <ul>
+            <div *ngFor="let customer of customers" (click)="selectCustomer(customer)">
+                <li *ngIf="customer.age>20">
+                    <strong>{{customer.firstName}}</strong>
+                </li>
+            </div>
+        </ul>
+
+        <strong *ngIf="selectedCustomer; else elseBlcok">{{selectedCustomer.firstName}} seçtiniz ...</strong>
+        <ng-template #elseBlcok>
+            <p>Birşey Seçmediniz ...</p>
+        </ng-template>
+    </div>
+</main>
