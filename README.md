@@ -13,3 +13,5 @@ This project is my pratice application with Angular.
 I used in this project : 
 [Boostrap v5.1.3](https://getbootstrap.com),
 [Alertify Js](https://alertifyjs.com/)
+
+For Dummy Json i used [Json Placeholder](https://jsonplaceholder.typicode.com/)
